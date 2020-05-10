@@ -163,3 +163,5 @@ Implémentation détaillée
 - une page web(HTML, css, js) de jeu qui fait appel à un webservice qui vont enregistrer le score du joueur
 - une page web(HTML, css, js) de fin de jeu qui fait appel à un webservice qui va nous afficher un tableau 
 	avec les cinq meilleurs scores
+---------------------------------
+DIAGRAMME ER DANS LE FICHIER IMG 
