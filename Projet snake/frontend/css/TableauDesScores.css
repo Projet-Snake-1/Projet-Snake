@@ -1,0 +1,44 @@
+html{
+    
+    background-image: url(../img/arcade_screen3.jpg);
+}
+
+body table{
+    
+    border: medium solid #000;
+    width: 60%;
+}
+
+body table thead tr th{
+    
+    font-family: 'Arcade', arial;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px gray;
+
+}
+
+body table tbody tr td{
+    
+    font-family: 'Arcade', arial;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px gray;
+    text-align: center;
+    
+}
+
+body input{
+    
+    background-color: white;
+    font-family: 'Arcade', arial;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px gray;
+    display: block;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+
+body input:hover{
+    
+    background-color: #FF8333;
+    
+}

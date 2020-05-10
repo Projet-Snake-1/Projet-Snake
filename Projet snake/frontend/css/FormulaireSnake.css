@@ -1,0 +1,56 @@
+html{
+    background-image: url(../img/arcade_screen1.jpg);
+    background-size: cover;
+}
+
+body form{
+    margin: 20px auto;
+    padding: 15px;
+    width: 25%;
+    border: 10px solid #000;
+    background-color: darkgray;
+}
+
+body form h1{
+    font-family: 'Arcade', arial;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px gray;
+    text-align: center;
+}
+
+body form input{
+    display: block;
+    margin: auto;
+    border: 2px solid #000;
+    width: 150px;
+    padding: 10px;
+}
+
+body form select{
+    display: block;
+    margin: auto;
+}
+
+body form label select{
+    border: 1px solid #000;
+}
+
+body form label{
+    font-family: 'Arcade', arial;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px gray;
+}
+
+body form div input{
+    background-color: white;
+    font-family: 'Arcade', arial;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px gray;
+    display: block;
+}
+
+body form div input:hover{
+    
+    background-color: #FF8333;
+    
+}

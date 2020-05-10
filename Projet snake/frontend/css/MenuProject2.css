@@ -1,0 +1,31 @@
+html{
+    background-image: url(../img/arcade_screen4.jpg);
+}
+
+body input{
+    
+    background-color: white;
+    font-family: 'Arcade', arial;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px gray;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+}
+
+body input:hover{
+    
+    background-color: #FF8333;
+    
+}
+
+body canvas{
+    background-color: black;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
