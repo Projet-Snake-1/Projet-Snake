@@ -43,14 +43,14 @@ Implémentation détaillée
 3. backend: les webservices 
 
 	un webservice qui recoit les données du joueurs et les envoit au serveur
-		retour: RAW
-		nom: 
-		paramètres:
+		* retour: RAW
+		* nom: sendform
+		* paramètres: :pseudoVar, :ageVar; :paysVar
 
 	un webservice qui recoit le socres et le pseudo du joueurs et les envoit au serveur
-		retour: RAW
-		nom: 
-		paramètres:
+		* retour: RAW
+		* nom: sendscore
+		* paramètres: :scoreVar, :pseudoVar
 	
 	un webservice qui envoie la lister des pays 
 		retour: tableau Json du pseudo, de l'age, du socre et du code du pays 
