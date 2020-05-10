@@ -1,0 +1,1 @@
+create service "sendscore" type 'raw' authorization off user "DBA" url on methods 'get' as call proc_tableauScores(:scoreVar,:pseudoVar);

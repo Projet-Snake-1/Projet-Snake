@@ -1,0 +1,1 @@
+create service "sendform" type 'raw' authorization off user "DBA" url on methods 'get' as call proc_creerJoueur(:pseudoVar,:ageVar,:paysVar);

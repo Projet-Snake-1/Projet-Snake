@@ -1,0 +1,1 @@
+create service "listepays" type 'json' authorization off user "DBA" url on methods 'get' as call proc_listePays();
