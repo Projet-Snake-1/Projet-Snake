@@ -34,9 +34,9 @@ Implémentation détaillée
 
 1. backend : une base de données contenant trois tables
 
-	une table joueurs reprenant le pseudo, l'age et le pays du joueur
-	une table pays reprenant une liste des pays de l'union europèenne et le code pays 
-	une table score reprenant le pseudo du joueur et son score
+	* une table joueurs reprenant le pseudo, l'age et le pays du joueur
+	* une table pays reprenant une liste des pays de l'union europèenne et le code pays 
+	* une table score reprenant le pseudo du joueur et son score
 
 2. backend: un serveur web capable de proposer les pages HTML, js ,css ainsi que les webservices
  
