@@ -1,42 +1,165 @@
-# Projet-Snake
+Présentation de l'équipe
+------------------------
 
-Notre projet est basé sur le jeu d’arcade Snake. Ceci est une première ébauche en fonction du temps et de la maîtrise du projet nous allons surement rajouter des fonctionnalités.
- 
-Implémentation : approche technique
- 
-1 backend : une base de données permettant de mémoriser les « données joueurs » et score. 
+Saskia Libotte, Sébastien Hacquin, Tim Van Den Eeckhaut
 
-2 backend : un serveur web capable de fournir les pages html, js, css, ainsi que de proposer des webservices
+Description du projet
+-------------------------
 
-3 backend :    	Démarrer le jeu
-                           	Récupérer les données des la partie
-                           	Recommencer la partie
-                           	Quitter/retourner au menu du jeu  
-                            
-4 frontend : une page web (html, js, css) permettant d’appeler les webservices et de traiter les réponses, qui proposer une interface utilisateur pour :
+Besoin du client
+
+Nous désirons créer un site web simulant un jeu d'arcade Snake avec 
+la possibilité de garder une trace des resultats.
+
+=Fonctionnalités principales=
+
+* une page demandant à l'utilisateur d'entrer son pseudo, son age et 
+  choisir son pays(pays union européenne). 
+
+* une page contenant un canvas et un bouton qui permet de lancer 
+  le jeu 
+
+* une page qui affiche un tableu des scores des cinq meilleurs 
+  scores. 
+
+=Fonctionnalités secondaires=
+
+* possibilité de revenir à la premier page pour jouer à nouveau 
+---------------------------------------------------------------------
+
+Implémentation détaillée 
+-------------------------
+
+=Implémentation: approche technique=
+
+1. backend : une base de données contenant trois tables
+
+	une table joueurs reprenant le pseudo, l'age et le pays du joueur
+	une table pays reprenant une liste des pays de l'union europèenne et le code pays 
+	une table score reprenant le pseudo du joueur et son score
+
+2. backend: un serveur web capable de proposer les pages HTML, js ,css ainsi que les webservices
  
-Un menu de données joueurs (et level)
-La partie
-Bouton démarré
-Bouton reset
-Scoreboard
-Touche
-(A COMPLETER)
-Implémentation : ordre d’implémentation
- 
-Première étape réaliser frontend pour avoir le jeu fonctionner et pouvoir gérer des données et ensuite finir par le backend pour pouvoir stocker et faire appel aux données.
- 
-Implémentation : approche fonctionnelle
- 
-En tant qu’utilisateur :
-Entrer ses données
-Jouer au jeu
-Voir son score
-Redémarrer le jeu
-Voir le temps de jeu
-Retourner au menu principal
-Voir les meilleur scores
-                           	
-                               
+3. backend: les webservices 
+
+	un webservice qui recoit les données du joueurs et les envoit au serveur
+		retour: RAW
+		nom: 
+		paramètres:
+
+	un webservice qui recoit le socres et le pseudo du joueurs et les envoit au serveur
+		retour: RAW
+		nom: 
+		paramètres:
+	
+	un webservice qui envoie la lister des pays 
+		retour: tableau Json du pseudo, de l'age, du socre et du code du pays 
+		exemple:  
+			[
+    				{
+        				"pseudo": "sddsd",
+        				"age": 65,
+        				"score": 2,
+       					 "code": "CYP"
+    				}
+			]
+
+	
+	un webservice qui envoie la lister des pays 
+		retour: tableau Json des noms des pays
+		exemple:  
+			[
+    				{
+       					"nomPays": "Allemagne"
+    				},
+    				{
+        				"nomPays": "Autriche"
+    				},
+   				{
+        				"nomPays": "Belgique"
+    				},
+    				{
+        				"nomPays": "Bulgarie"
+    				},
+    				{
+        				"nomPays": "Chypre"
+    				},
+    				{
+        				"nomPays": "Croatie"
+    				},
+   				{
+        				"nomPays": "Danemark"
+    				},
+    				{
+        				"nomPays": "Espagne"
+    				},
+    				{
+        				"nomPays": "Estonie"
+    				},
+    				{
+        				"nomPays": "Finlande"
+   				},
+    				{
+        				"nomPays": "France"
+    				},
+    				{
+        				"nomPays": "Grèce"
+    				},
+    				{
+        				"nomPays": "Hongrie"
+    				},
+    				{
+        				"nomPays": "Irlande"
+    				},
+    				{
+        				"nomPays": "Italie"
+    				},
+    				{
+        				"nomPays": "Lettonie"
+   				},
+    				{
+        				"nomPays": "Lituanie"
+    				},
+    				{
+        				"nomPays": "Luxembourg"
+    				},
+   				{
+        				"nomPays": "Malte"
+    				},
+    				{
+        				"nomPays": "Pays-Bas"
+    				},
+    				{
+        				"nomPays": "Pologne"
+    				},
+    				{
+        				"nomPays": "Portugal"
+    				},
+    				{
+        				"nomPays": "Republique Tchèque"
+    				},
+    				{
+        				"nomPays": "Roumanie"
+    				},
+    				{
+        				"nomPays": "Royaume Uni"
+    				},
+    				{
+        				"nomPays": "Slovaquie"
+    				},
+    				{
+        				"nomPays": "Slovènie"
+    				},
+    				{
+        				"nomPays": "Suède"
+    				}
+			]
 
 
+	
+4. Frontend: 
+ - une page web(HTML, css, js) avec un formulaire qui fait appel à des webservices, et qui permet au 
+	joueur de s'enregistrer. 
+- une page web(HTML, css, js) de jeu qui fait appel à un webservice qui vont enregistrer le score du joueur
+- une page web(HTML, css, js) de fin de jeu qui fait appel à un webservice qui va nous afficher un tableau 
+	avec les cinq meilleurs scores
