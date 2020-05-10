@@ -1,7 +1,7 @@
 Présentation de l'équipe
 ------------------------
 
-Saskia Libotte, Sébastien Hacquin, Tim Van Den Eeckhaut
+Saskia Libotte, Sébastian Hacquin, Tim Van Den Eeckhaut
 
 Description du projet
 -------------------------
